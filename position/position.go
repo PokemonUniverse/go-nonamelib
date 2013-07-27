@@ -22,6 +22,8 @@ import (
 
 type Position struct {
 	X, Y, Z int
+	
+	MapId	int
 }
 
 // ZP is the zero position
@@ -68,12 +70,12 @@ func (p Position) String() string {
 
 // Add returns the position p+q.
 func (p Position) Add(q Position) Position {
-	return Position{p.X + q.X, p.Y + q.Y, p.Z + q.Z}
+	return Position{p.X + q.X, p.Y + q.Y, p.Z + q.Z, 0}
 }
 
 // Sub returns the position p-q.
 func (p Position) Sub(q Position) Position {
-	return Position{p.X - q.X, p.Y - q.Y, p.Z - q.Z}
+	return Position{p.X - q.X, p.Y - q.Y, p.Z - q.Z, 0}
 }
 
 // Eq returns true if Position p and q are the same
