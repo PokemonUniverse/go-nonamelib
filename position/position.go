@@ -22,8 +22,8 @@ import (
 
 type Position struct {
 	X, Y, Z int
-	
-	MapId	int
+
+	MapId int
 }
 
 // ZP is the zero position
