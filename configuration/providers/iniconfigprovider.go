@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/PokemonUniverse/nonamelib/configuration"
+	"github.com/PokemonUniverse/go-nonamelib/configuration"
 )
 
 const (
